@@ -3,6 +3,8 @@ kind: RouteTarget
 metadata:
   name: target-64512-8888888
   annotations:
+    argocd.argoproj.io/sync-wave: '18'
+    argocd.argoproj.io/hook: 'Sync'
     core.juniper.net/display-name: Sample Route Target
     core.juniper.net/description:
       A route-target extended community, or route target, is a type of BGP

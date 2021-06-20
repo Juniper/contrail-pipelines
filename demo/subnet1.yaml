@@ -5,5 +5,7 @@ metadata:
   annotations:
     core.juniper.net/display-name: v4 subnet
     core.juniper.net/description: v4 subnet
+    argocd.argoproj.io/sync-wave: '2'
+    argocd.argoproj.io/hook: 'Sync' 
 spec:
   cidr: 10.0.0.0/24

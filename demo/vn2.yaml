@@ -3,6 +3,8 @@ kind: VirtualNetwork
 metadata:
   name: vn2
   annotations:
+    argocd.argoproj.io/sync-wave: '14'
+    argocd.argoproj.io/hook: 'Sync'
     core.juniper.net/display-name: Sample Virtual Network
     core.juniper.net/description:
       VirtualNetwork is a collection of end points (interface or ip(s) or MAC(s))
