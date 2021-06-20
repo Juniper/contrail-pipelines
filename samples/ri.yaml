@@ -1,0 +1,7 @@
+spec:
+  routeTargetReferences:
+  - apiVersion: core.contrail.juniper.net/v1alpha1
+    fqName:
+    - target-64512-8888888
+    kind: RouteTarget
+    name: target-64512-8888888

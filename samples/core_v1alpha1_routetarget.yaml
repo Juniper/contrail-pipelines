@@ -1,0 +1,10 @@
+apiVersion: core.contrail.juniper.net/v1alpha1
+kind: RouteTarget
+metadata:
+  name: target-42-1000
+  annotations:
+    core.juniper.net/display-name: Sample Route Target
+    core.juniper.net/description:
+      A route-target extended community, or route target, is a type of BGP
+      extended community that you use to define VPN membership. The route
+      target appears in a field in the update messages associated with VPN-IPv4.

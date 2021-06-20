@@ -1,0 +1,9 @@
+apiVersion: core.contrail.juniper.net/v1alpha1
+kind: Subnet
+metadata:
+  name: subnet2
+  annotations:
+    core.juniper.net/display-name: v4 subnet
+    core.juniper.net/description: v4 subnet
+spec:
+  cidr: 10.1.0.0/24
