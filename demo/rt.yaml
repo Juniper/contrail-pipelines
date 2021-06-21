@@ -1,7 +1,7 @@
 apiVersion: core.contrail.juniper.net/v1alpha1
 kind: RouteTarget
 metadata:
-  name: target-64512-8888888
+  name: target-64512-8888
   annotations:
     argocd.argoproj.io/sync-wave: '18'
     argocd.argoproj.io/hook: 'Sync'
