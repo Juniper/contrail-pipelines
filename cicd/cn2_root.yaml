@@ -8,11 +8,7 @@ spec:
     namespace: default
     name: in-cluster
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true  
   source:
     path: demo
-    repoURL: https://github.com/Juniper/contrail-pipelines
+    repoURL: https://github.com/Juniper/contrail-pipelines.git
     targetRevision: HEAD
