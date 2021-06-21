@@ -1,14 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cn2-app
+  name: contrail-app
   namespace: argocd
 spec:
   destination:
     namespace: default
     name: in-cluster
   project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true  
   source:
     path: demo
-    repoURL: https://github.com/Juniper/contrail-pipelines.git
+    repoURL: https://github.com/Juniper/contrail-pipelines
     targetRevision: HEAD
