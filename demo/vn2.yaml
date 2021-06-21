@@ -11,10 +11,6 @@ metadata:
       that can communicate with each other by default. It is a collection of
       subnets whose default gateways are connected by an implicit router
 spec:
-  parent:
-    apiVersion: v1
-    kind: Namespace
-    name: default
   v4SubnetReference:
     apiVersion: core.contrail.juniper.net/v1alpha1
     kind: Subnet
