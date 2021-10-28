@@ -1,1 +1,8 @@
-test
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webtier
+  labels:
+    ns: webtier
+    core.juniper.net/isolated-namespace: "true"
+---
