@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: application
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    name: in-cluster
+  project: default
+  source:
+    path: application
+    repoURL: https://github.com/Juniper/contrail-pipelines
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+#      prune: true
+      selfHeal: true  
+    syncOptions:
+      - CreateNamespace=true
