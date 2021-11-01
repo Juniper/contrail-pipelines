@@ -33,7 +33,7 @@ spec:
         - name: mariadb.enabled
           value: 'false'
         - name: externalDatabase.host
-          value: database-mariadb.dbtier.svc.cluster.local
+          value: shopdatabase-mariadb.dbtier.svc.cluster.local
         - name: externalDatabase.password
           value: Embe1mpls
         - name: externalDatabase.user
