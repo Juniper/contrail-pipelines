@@ -1,1 +1,35 @@
-
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: database
+spec:
+  destination:
+    name: ''
+    namespace: dbtier
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: ''
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 9.7.0
+    chart: mariadb
+    helm:
+      parameters:
+        - name: auth.rootPassword
+          value: Embe1mpls
+        - name: auth.database
+          value: bitnami_wordpress
+        - name: auth.password
+          value: Embe1mpls
+        - name: auth.username
+          value: admin
+        - name: primary.persistence.enabled
+          value: 'false'
+        - name: secondary.persistence.enabled
+          value: 'false'
+        - name: auth.replicationPassword
+          value: Embe1mpls
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
