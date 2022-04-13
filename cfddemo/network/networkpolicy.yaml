@@ -8,6 +8,7 @@ spec:
   - ports:
     - port: 80
     - port: 3306
+    - port: 8080
   egress:
   - {}
   podSelector:
