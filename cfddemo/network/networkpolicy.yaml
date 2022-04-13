@@ -6,7 +6,7 @@ metadata:
 spec:
   ingress:
   - ports:
-    - port: 8080
+    - port: 80
     - port: 3306
   egress:
   - {}
